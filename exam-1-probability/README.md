@@ -11,3 +11,4 @@ This repository contains the materials for Exam 1 in Probability.
     - **Counting Sample Points** - Fundamental rule of counting, generalized multiplication rule, permutations, circular permutations, set partitions, and combinations.
     - **Probability of an Event** - Likelihood of an event, probability of an event A, and relative frequency definition of probability.
     - **Additive Rules** - additive rule of union of two events, additive rule of union of three events, and general additive rule.
+    - **Conditional Probability** - Conditional probability, independent events, and multiplication rule.
