@@ -12,3 +12,4 @@ This repository contains the materials for Exam 1 in Probability.
     - **Probability of an Event** - Likelihood of an event, probability of an event A, and relative frequency definition of probability.
     - **Additive Rules** - additive rule of union of two events, additive rule of union of three events, and general additive rule.
     - **Conditional Probability** - Conditional probability, independent events, and multiplication rule.
+    - **Bayes Rule** - Total probability theorem, Bayes rule, and applications of Bayes rule.
