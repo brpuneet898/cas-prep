@@ -13,3 +13,7 @@ This repository contains the materials for Exam 1 in Probability.
     - **Additive Rules** - additive rule of union of two events, additive rule of union of three events, and general additive rule.
     - **Conditional Probability** - Conditional probability, independent events, and multiplication rule.
     - **Bayes Rule** - Total probability theorem, Bayes rule, and applications of Bayes rule.
+
+2. Random Variables and Distributions
+
+    - **Intro to Random Variables** - Definition of random variables, discrete and continuous random variables, discrete and continuous sample space, definition of bernoulli random variable.
