@@ -17,3 +17,4 @@ This repository contains the materials for Exam 1 in Probability.
 2. Random Variables and Distributions
 
     - **Intro to Random Variables** - Definition of random variables, discrete and continuous random variables, discrete and continuous sample space, definition of bernoulli random variable.
+    - **Discrete Probability Distributions** - Probability mass function, cumulative distribution function for discrete random variables, and probability histograms.
