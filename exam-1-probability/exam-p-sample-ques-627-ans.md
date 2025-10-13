@@ -191,3 +191,46 @@ $$
 ### Answer: (B) 0.173
 
 ---
+
+## **Solution 7**
+
+Group proportions:
+
+- Only auto: $65\%-15\% = 50\%$
+- Only homeowners: $50\%-15\% = 35\%$
+- Both: $15\%$
+
+Renewal probabilities (company estimates):
+
+- Only auto $\rightarrow 40\%$
+- Only homeowners $\rightarrow 60\%$
+- Both $\rightarrow 80\%$ (renew at least one)
+
+Total renewing at least one policy:
+$$
+0.50\cdot 0.40\;+\;0.35\cdot 0.60\;+\;0.15\cdot 0.80
+=0.20+0.21+0.12=0.53
+$$
+
+### Answer: (D) 53%
+
+---
+
+## **Solution 8**
+
+Let $p=P(\text{physical therapist})$, $c=P(\text{chiropractor})$.
+Given $P(\text{both})=0.22$, $P(\text{neither})=0.12$, and $c=p+0.14$.
+
+By inclusion–exclusion:
+$$
+P(\text{PT}\cup \text{Chiro})=p+c-0.22=1-0.12=0.88
+\Rightarrow p+c=1.10
+$$
+Using $c=p+0.14$:
+$$
+p+(p+0.14)=1.10 \;\Rightarrow\; 2p=0.96 \;\Rightarrow\; p=0.48
+$$
+
+### Answer: (D) 0.48
+
+---
