@@ -107,3 +107,87 @@ P(A) = P(A ∪ B) + P(A ∪ B') - 1 = 0.7 + 0.9 - 1 = 0.6
 $$
 
 ### Answer: (D) 0.6
+
+---
+
+## **Solution 4**
+
+Let:
+
+- Urn 1: 4 red, 6 blue → $P(\text{red})=\frac{4}{10}=0.4$, $P(\text{blue})=0.6$
+- Urn 2: 16 red, $x$ blue → total $16+x$
+  - $P(\text{red})=\frac{16}{16+x}$
+  - $P(\text{blue})=\frac{x}{16+x}$
+
+Same-color probability:
+$$
+0.44 = 0.4\cdot\frac{16}{16+x} + 0.6\cdot\frac{x}{16+x}
+$$
+Multiply by $(16+x)$:
+$$
+0.44(16+x) = 0.4\cdot16 + 0.6x = 6.4 + 0.6x
+$$
+Expand and solve:
+$$
+7.04 + 0.44x = 6.4 + 0.6x
+\Rightarrow 7.04 - 6.4 = 0.6x - 0.44x
+\Rightarrow 0.64 = 0.16x
+\Rightarrow x = \frac{0.64}{0.16} = 4
+$$
+
+### Answer: (A) 4
+
+---
+
+## **Solution 5**
+
+Given:
+
+- Total $=10000$, Young $=3000$, Male $=4600$, Married $=7000$
+- Young males $=1320$, Married males $=3010$, Young married persons $=1400$, Young married males $=600$
+
+Young married females:
+$$
+1400-600=800
+$$
+
+Young females total:
+$$
+3000-1320=1680
+$$
+
+Young, female, single:
+$$
+1680-800=880
+$$
+
+### Answer: (D) 880
+
+---
+
+## **Solution 6**
+
+Data:
+
+- Total men $=937$
+- Heart-disease deaths $=210$
+- Men with $\ge 1$ parent with heart disease $=312$, of whom $102$ died of heart disease
+
+Men with **no** parental heart disease:
+$$
+937-312=625
+$$
+
+Heart-disease deaths with **no** parental history:
+$$
+210-102=108
+$$
+
+Required probability:
+$$
+P(\text{HD death}\mid \text{no parental HD})=\frac{108}{625}=0.1728
+$$
+
+### Answer: (B) 0.173
+
+---
