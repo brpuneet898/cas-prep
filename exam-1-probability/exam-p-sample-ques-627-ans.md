@@ -234,3 +234,52 @@ $$
 ### Answer: (D) 0.48
 
 ---
+
+## **Solution 9**
+
+Let $A$ = “insures exactly one car”, $B$ = “insures more than one car”, $S$ = “insures a sports car”.
+
+Given: $P(B)=0.70 \Rightarrow P(A)=0.30$, $P(S)=0.20$, and $P(S\mid B)=0.15$.
+
+By total probability,
+$$
+P(S)=P(S\mid A)P(A)+P(S\mid B)P(B)
+\Rightarrow 0.20=P(S\mid A)\cdot 0.30+0.15\cdot 0.70.
+$$
+Hence
+$$
+P(S\mid A)=\frac{0.20-0.105}{0.30}=\frac{0.095}{0.30}=\frac{19}{60}.
+$$
+Therefore
+$$
+P(A\cap S^c)=P(A)\,[1-P(S\mid A)]=0.30\left(1-\frac{19}{60}\right)
+=0.30\cdot\frac{41}{60}=0.205\approx 0.21.
+$$
+
+### Answer: (B) 0.21
+
+---
+
+## **Solution 10**
+
+Let $C$ = collision, $D$ = disability.
+Given: $P(C)=2P(D)$, $C$ and $D$ independent, and $P(C\cap D)=0.15$.
+
+With independence,
+$$
+P(C\cap D)=P(C)P(D)=0.15,\quad P(C)=2P(D)=2d.
+$$
+So
+$$
+(2d)\,d=0.15\;\Rightarrow\;2d^2=0.15\;\Rightarrow\;d=\sqrt{0.075}\approx 0.2739,\quad
+c=2d\approx 0.5477.
+$$
+Probability of neither:
+$$
+P(C^c\cap D^c)=(1-c)(1-d)=1-(c+d-cd)
+=1-(0.5477+0.2739-0.15)\approx 0.3284\approx 0.33.
+$$
+
+### Answer: (B) 0.33
+
+---
