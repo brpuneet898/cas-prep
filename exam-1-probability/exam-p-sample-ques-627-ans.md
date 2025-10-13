@@ -283,3 +283,124 @@ $$
 ### Answer: (B) 0.33
 
 ---
+
+## **Solution 11**
+
+Given:
+
+- $P(\text{High})=0.14$, $P(\text{Low})=0.22 \Rightarrow P(\text{Normal})=1-0.14-0.22=0.64$
+- $P(\text{Irregular})=0.15 \Rightarrow P(\text{Regular})=0.85$
+- $P(\text{High}\mid\text{Irregular})=\frac{1}{3} \Rightarrow P(\text{High}\cap\text{Irregular})=0.15\cdot\frac{1}{3}=0.05$
+- $P(\text{Irregular}\mid\text{Normal})=\frac{1}{8} \Rightarrow P(\text{Normal}\cap\text{Irregular})=0.64\cdot\frac{1}{8}=0.08$
+
+Compute the irregular with low blood pressure:
+$$
+P(\text{Low}\cap\text{Irregular})
+= P(\text{Irregular})-P(\text{High}\cap\text{Irregular})-P(\text{Normal}\cap\text{Irregular})
+=0.15-0.05-0.08=0.02
+$$
+
+Thus, regular with low blood pressure:
+$$
+P(\text{Low}\cap\text{Regular})
+= P(\text{Low})-P(\text{Low}\cap\text{Irregular})
+=0.22-0.02=0.20
+$$
+
+### Answer: (E) 20%
+
+---
+
+## **Solution 12**
+
+For “only one” factor: $P(\text{only }A)=P(\text{only }B)=P(\text{only }C)=0.1$.
+
+For “exactly two” factors:
+$$
+P(AB\text{ only})=P(BC\text{ only})=P(AC\text{ only})=0.12
+$$
+
+Given $P(A\cap B \cap C \mid A\cap B)=\frac{1}{3}$, let $x=P(A\cap B \cap C)$.
+Then
+$$
+\frac{x}{0.12+x}=\frac{1}{3}\;\Rightarrow\; 3x=0.12+x \;\Rightarrow\; x=0.06 .
+$$
+
+Total with at least one factor:
+$$
+0.3+0.36+0.06=0.72 \;\Rightarrow\; P(\text{none})=0.28 .
+$$
+
+Also
+$$
+P(A)=0.10+0.12+0.12+0.06=0.40 \;\Rightarrow\; P(A^c)=0.60 .
+$$
+
+Therefore
+$$
+P(\text{none}\mid A^c)=\frac{P(\text{none}\cap A^c)}{P(A^c)}=\frac{0.28}{0.60}=0.466\overline{6}\approx 0.467 .
+$$
+
+### Answer: (C) 0.467
+
+---
+
+## **Solution 13**
+
+Given the recurrence $p(n+1)=0.2\,p(n)$ for $n\ge 0$.
+Let $p(0)=a$. Then $p(n)=a(0.2)^n$.
+
+Normalization:
+$$
+\sum_{n=0}^\infty p(n)= a\sum_{n=0}^\infty (0.2)^n
+= a\cdot\frac{1}{1-0.2}= \frac{a}{0.8}=1
+\;\Rightarrow\; a=0.8.
+$$
+Thus $p(0)=0.8$, $p(1)=0.16$.
+
+Probability of more than one claim:
+$$
+P(N>1)=1-[p(0)+p(1)]=1-(0.8+0.16)=0.04.
+$$
+
+### Answer: (A) 0.04
+
+---
+
+## **Solution 14**
+
+Let employees either choose **none** (probability $x$) or **exactly two** coverages.
+Let $p_{AB},p_{AC},p_{BC}$ be probabilities of choosing those two, so
+$$
+p_{AB}+p_{AC}+p_{BC}=1-x.
+$$
+Given marginal proportions:
+$$
+P(A)=p_{AB}+p_{AC}=\tfrac14,\quad
+P(B)=p_{AB}+p_{BC}=\tfrac13,\quad
+P(C)=p_{AC}+p_{BC}=\tfrac{5}{12}.
+$$
+Add the three marginals:
+$$
+\tfrac14+\tfrac13+\tfrac{5}{12}=1=2(p_{AB}+p_{AC}+p_{BC})=2(1-x)
+\;\Rightarrow\; 1-x=\tfrac12 \;\Rightarrow\; x=\tfrac12.
+$$
+
+### Answer: (C) $1/2$
+
+---
+
+## **Solution 15**
+
+Weekly counts $N$ satisfy $P(N=n)=2^{-(n+1)}$ for $n\ge0$.  
+For two independent weeks, total $T=N_1+N_2$:
+$$
+P(T=7)=\sum_{k=0}^{7} P(N_1=k)P(N_2=7-k)
+=\sum_{k=0}^{7} \frac{1}{2^{k+1}}\frac{1}{2^{7-k+1}}
+=\sum_{k=0}^{7}\frac{1}{2^{9}}
+=\frac{8}{2^{9}}=\frac{1}{64}.
+$$
+
+### Answer: (D) $1/64$
+
+---
